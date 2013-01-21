@@ -1,0 +1,42 @@
+<!DOCTYPE html> 
+<html> 
+<head> 
+	<title></title> 
+	<meta name="viewport" content="width=device-width, initial-scale=1"> 
+	<link rel="stylesheet" href="http://code.jquery.com/mobile/1.1.0/jquery.mobile-1.1.0.min.css" />
+	<link href='css/jDiaporama.css' rel='stylesheet'/>
+
+	<script src="http://code.jquery.com/jquery-1.7.1.min.js"></script>
+	<script src="http://code.jquery.com/mobile/1.1.0/jquery.mobile-1.1.0.min.js"></script>
+	<!-- Javascript -->
+	<script type="text/javascript" src="js/JPictureRotary.js"></script>
+	<script type="text/javascript">
+	$(document).ready(function(){
+
+		$(".diaporama1").JPictureRotary({
+			animationSpeed: "slow",
+			delay:2
+		});
+
+	});
+	</script>
+</head> 
+<body>
+	<div data-role="page" id="mainPage">
+		<!-- /header -->
+		<div data-role="content"> 
+			<div style="margin-bottom: 30px">
+				<ul class="diaporama1">
+					<li><img src="img/image1.jpg" alt="On the road again" title="Sur la route de l'ouest, Arizona &copy; Guillaume Voisin" /></li>
+					<li><img src="img/image2.jpg" alt="Venice Beach, California" /></li>
+					<li><img src="img/image3.jpg" alt="" title="Les garde-c么te sur les plages de Malibu &copy; Guillaume Voisin" /></li>
+					<li><img src="img/image4.jpg" alt="Universal Studios" title="Le parc d'attractions Universal Studios &copy; Guillaume Voisin" /></li>
+					<li><img src="img/image5.jpg" alt="Hollywood Sign" title="Le fameux panneau Hollywood sur la colline &copy; Guillaume Voisin" /></li>
+				</ul>
+			</div>
+			<br></br>
+
+		</div>
+	</div><!-- /page -->
+</body>
+</html>
